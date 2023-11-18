@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+:root{
+  --bg-color :black;
+   --secont-bg-color:#101010;
+   --main-color:#e9204f;
+   --text-color:#fff;
+   --secont-colour:#e4e4e4;
+   --other-color:#c6c9d8bf;
+   --h1-font:7rem;
+   --h2-font:3.5rem;
+   --p-font:1.1rem;
+}
+body{
+    color: var(--text-color);
+    background:var(--bg-color);
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 11px;
+    border-bottom: 1px red;
+    transition: all ease .50s
+  
+}
+.logo img{
+  width:100%; 
+  height: auto; 
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: var(--secont-colour);
+    font-size: var(--p-font);
+    font-weight: 600;
+    margin: 0 40px;
+    transition: all ease 40s;
+   
+}
+.navlist a:hover{
+    color:var(--main-color);
+}
+#menu-icon{
+    font-size: 42px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+}
+section {
+    padding: 120px 19% 100px;
+}
+.Homepage{
+    position: relative;
+    min-height:100vh;
+    width: 100%;
+    background: url(images\download.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+   
+}
+.hero-text h3{
+color: var(--second-colour);
+font-size: 22px;
+font-weight: 600;
+margin-bottom: 15px;
+word-spacing: 10px;
+}
+.hero-text h1{
+    font-family: 'Dosis',sans-serif;
+    font-size: var(--h1-font);
+    color: var(--text-color);
+    font-weight: 100;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.hero-text h4{
+    color: var(--second-colour);
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 15px;
+    margin-bottom: 3.5rem;
+
+}
+.btn{
+    display: inline-block;
+    padding: 16px 45px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    border: 2px solid var(--main-color);
+    transition: all ease .50s;
+}
+.btn:hover{
+ transform: translateX(5px); 
+ background: transparent;  
+ border: 2px solid var(--main-color);
+}
+.header.sticky{
+    padding: 15px 11%;
+    background: #000;
+    border-bottom: 1px solid #4e5055;
+}
+.Childhood{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap: 4rem;
+}
+.Childhood img img{
+width: 100%;
+height: auto;
+}
+.childhood-text h2{
+    font-family: 'Dosis',sans-serif;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.childhood-text h5{
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+span{
+    color: var(--main-color);
+
+}
+.childhood-text p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom:3rem ;
+}
+.text-centre h2{
+    font-family: 'Dosis',sans-serif;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.aspirations h2{
+    font-family: 'Dosis',sans-serif;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
